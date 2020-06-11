@@ -1,0 +1,13 @@
+.center.jumbotron.jumbotron-fluid
+  %h1.display-4
+    = t('.welcome_text')
+  %p.lead
+    = t('.lead')
+  %hr.my-4
+  - if signed_in?
+    = link_to t('.start'), work_path,
+ class: "btn btn-lg btn-primary "
+
+  - else
+    = link_to t('.sign_up'), signup_path,
+   class: "btn btn-lg btn-primary"

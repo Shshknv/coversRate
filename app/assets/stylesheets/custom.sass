@@ -1,0 +1,226 @@
+@import "bootstrap-sprockets"
+@import "bootstrap"
+
+
+/* mixins, variables, etc. */
+
+$gray-medium-light: #eaeaea
+$body-image: 'palace_square_from_roof.jpg'
+$body-background-top: #96B5E1
+$body-background-bottom: #AACAC7
+$gradient-angle: 40deg
+
+@mixin box_sizing
+  -moz-box-sizing: border-box
+  -webkit-box-sizing: border-box
+  box-sizing: border-box
+
+
+
+
+//
+//*= require main
+//*= require icons
+//*= require header
+//*= require footer
+//*= require mixins
+//
+
+/* universal */
+
+section
+  overflow: auto
+
+textarea
+  resize: vertical
+
+.center
+  text-align: center
+  h1
+    margin-bottom: 10px
+
+
+.container
+  position: relative
+  top: 3em
+
+
+.results h2
+  color: #5a1a88
+  font-size: 2.5em
+
+/* typography */
+
+h1, h2, h3, h4, h5, h6
+  line-height: 1
+
+
+h1
+  font-size: 3em
+  letter-spacing: -2px
+  margin-bottom: 30px
+  text-align: center
+
+h2
+  font-size: 1.2em
+  letter-spacing: -1px
+  margin-bottom: 30px
+  text-align: center
+  font-weight: normal
+  color: $gray-light
+
+p
+  font-size: 1.4em
+  line-height: 1.1em
+
+/* help */
+
+.about-copy
+  position: relative
+  top: 3em
+
+
+
+h1.list
+  text-align: justify
+
+
+
+/* header */
+
+#logo
+  float: left
+  margin-right: 10px
+  font-size: 1.7em
+  color: #c4f7ff
+  //text-transform: uppercase
+  letter-spacing: -1px
+  padding-top: 9px
+  font-weight: bold
+
+  &:hover
+    color: #337ab7
+    text-decoration: none
+
+
+/* miscellaneous */
+
+.debug_dump
+  clear: both
+  float: left
+  width: 100%
+  margin-top: 45px
+  @include box_sizing
+
+
+
+.about-video
+  font-size: 1.5em
+
+  p
+    display: inline-block
+
+
+
+/* sidebar */
+
+.show_user
+  font-size: 1.5em
+  margin-top: 5em
+
+
+
+aside
+  section
+    padding: 10px 0
+    border-top: 1px solid $gray-light
+    &:first-child
+      border: 0
+      padding-top: 0
+
+    span
+      display: block
+      margin-bottom: 3px
+      line-height: 1
+
+    h1
+      font-size: 1.4em
+      text-align: left
+      letter-spacing: -1px
+      margin-bottom: 3px
+      margin-top: 0px
+
+.gravatar
+  float: left
+  margin-right: 10px
+
+  width: 3.1em
+  height: 3.1em
+  margin-top: .2em
+  margin-left: .6em
+
+
+
+
+/* forms */
+
+input, textarea, select, .uneditable-input
+  border: 1px solid #bbb
+  width: 100%
+  margin-bottom: 15px
+  @include box_sizing
+
+input
+  height: auto !important
+  font-size: 2em
+
+#error_explanation
+  color: #f00
+  ul
+    list-style: none
+    margin: 0 0 18px 0
+
+label
+  font-size: 1.8em
+
+
+div.span6.offset3
+  display: block
+  width: 60%
+  position: relative
+  left: 20%
+
+
+
+form.new_user
+  display: block
+  width: 60%
+  position: relative
+  left: 20%
+
+div.actions
+  display: block
+  font-size: 1.3em
+
+input[type="submit"]
+  font-size: 1em
+
+.btn.btn-large.btn-primary
+  display: block
+  font-size: 1.8em
+
+
+a.ui_link
+  font-size: 2em
+  font-weight: bold
+
+
+p.sign_up_link
+  margin-top: 1em
+  font-size: 1.6em
+
+  a
+    //font-size: 1.6em
+    font-weight: bold
+
+
