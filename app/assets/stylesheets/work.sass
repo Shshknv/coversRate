@@ -12,38 +12,43 @@ i
 i:hover:not(:disabled)
   cursor: pointer  //cursor: hand
   border: rgba(255, 233, 138, 0.70)
-  //background-color: #9bb2fc
   color: #555fbe
-  //rgba(255, 200, 141, 0.40)
   h2.up
     color: #555fbe
 
 
 button
-  color: #71C495
-  //text-decoration: none
-  font-family: $helvetica
-  text-shadow: rgba(13, 178, 159, 0.24)
   font-size: 1.5em
 
-  &:hover:not(:disabled)
-    //background-color: #9bb2fc
-    background: #badde4
-    //rgba(255, 200, 141, 0.40)
-
-//$image_heigt: 150px
 .button__left
-  border-radius: 35px
   height: 3em
-  box-shadow: 3px 3px 4px #989BB0
-  background: rgba(209, 211, 141, 0.40)
   width: 80%
   position: relative
-  left: 10%
-  border: rgba(255, 255, 255, 0.70)
-  //margin-top: 1.2em
+  left: 6%
   text-align: center
-  //text-shadow: rgba(13, 178, 159, 0.24)
+  cursor: pointer
+  margin: 10px
+  margin-top: 30px
+  border-radius: 5px
+  text-decoration: none
+  padding: 10px
+  font-size: 22px
+  transition: .3s
+  -webkit-transition: .3s
+  -moz-transition: .3s
+  -o-transition: .3s
+  display: inline-block
+  color: #2094a6
+  background-color: white
+  border: 2px #2094a6 solid
+  a
+    color: #2094a6
+  &:hover
+    background-color: #2094a6
+    color: white!important
+    a
+      color: white
+
 
   .modalBtn
     margin-top: .1em
@@ -51,19 +56,15 @@ button
   .theme
     margin-top: 1.2em
 
-//.button__left.modalBtn
 
 
 .button__choose
-  //border-radius: 15px
   color: #82A1C4
   height: 2.2em
   box-shadow: 3px 3px 4px #ACC9E5
   background: rgba(222, 165, 242, 0.29)
   width: 60%
-  //position: relative
   text-align: center
-  //left: 10%
   border: rgba(219, 255, 219, 0.70)
   padding: 0 10px
   margin-bottom: 1.5em
@@ -76,18 +77,11 @@ button
   box-shadow: 3px 3px 4px #989BB0
   background: rgba(209, 211, 141, 0.4)
   width: 20%
-  //position: relative
-  //left: 17%
-  //bottom: -51%
   border: rgba(255, 255, 255, 0.70)
-  //vertical-align: bottom
-  //margin-top: 1em
   margin-top: .5em
-  display:  block  //none
-  //text-align: center
+  display:  block
   cursor: auto
   text-decoration: none
-  //padding: 0 10px
   float: left
   margin-left: 8em
   margin-bottom: .6em
@@ -107,6 +101,7 @@ button
 
 
 .image
+  font-family: 'Lato'
   $img-small-height: 1.1em
   margin-top: -20px
   padding-bottom: 100px
@@ -130,42 +125,39 @@ button
     height: 45em
     width: 100%
     margin-top: -145px
+    font-weight: 400
     span.common_value, .total_values
       text-align: center
       position: relative
-      color: #4863be
+      background-color: #2094a6
+      opacity: 0.9
+      vertical-align: center
       font-size: 1.4em
       font-weight: bold
       top: 4em
       display: none
       height: 3em
+      color: white
 
       h2
         border-radius: 10px
         text-align: center
-        color: #ffffff
+        background-color: #2094a6
         font-weight: bold
         font-size: large
         display: inline-block
-
+        border: 2px #2094a6
+        color: white
 
       h2.common
         width: 45px
-        padding-top: 10px
-        padding-bottom: 10px
-        background-image: -webkit-linear-gradient(top, #cccccc, #330000)
-        background-image: -o-linear-gradient(top, #cccccc, #330000)
-        background-image: -moz-linear-gradient(top, #cccccc, #330000)
+        color: white
 
     span.total_values
       display: block
-
       h2.total
-        width: inherit //45px
-        padding: 10px
-        background-image: -webkit-linear-gradient(top, #cccccc, #05330c)
-        background-image: -o-linear-gradient(top, #cccccc, #05330c)
-        background-image: -moz-linear-gradient(top, #cccccc, #05330c)
+        width: inherit
+        margin-bottom: 10px
 
 
 
@@ -183,18 +175,17 @@ button
 
       .form_select
         display: block
-        color: #3b519c
+        color: #2094a6
         width: 80%
         height: 6em
         position: relative
         text-align: center
         left: 11%
-        font-family: $helvetica
         font-size: 1.5em
-
+        padding-top: 50px
         input
-          color: #3475BE
-          background: rgba(222, 165, 242, 0)
+          color: #2094a6
+          background: white
           padding: 0
           font-size: .9em
           height: 1.5em
@@ -211,19 +202,18 @@ button
 
       .form_select
         display: block
-        color: #4863be
+        color: #2094a6
         width: 80%
         height: 5.5em
         position: relative
         text-align: center
         left: 11%
-        font-family: $helvetica
         font-size: 1.5em
         margin-top: 2.5em
 
         input
-          color: #3475BE
-          background: rgba(222, 165, 242, 0)
+          color: #2094a6
+          background: white
           padding: 0
           font-size: .9em
           height: 1.5em
@@ -293,9 +283,7 @@ button
       display: none
 
     a
-      text-shadow: 0 -1px 1px #4aa5cf
       text-decoration: none
-      color: #4863be
 
 
   .image_display
@@ -304,7 +292,6 @@ button
     height: 45em
     background:  rgba(255, 255, 255, 0.8)
     h2.up-theme
-      font-family: 'Lato'
       font-weight: 300
       text-align: center
       color: #2094a6
@@ -313,19 +300,12 @@ button
       font-size: 2em
 
     h2.up
-      font-family: 'Lato'
-      font-weight: 300
-      text-align: left
-      color: #770772
+      font-weight: 400
+      text-align: center
       cursor: default
-      position: relative
-      left: 8%
-      width: 82%
-      margin-top: 0px
-      margin-bottom: 5px
-      margin-left: 5px
-      margin-right: 5px
-      font-size: 1.6em
+      margin-top: 10px
+      margin-bottom: 20px
+      font-size: 1.2em
 
     .img-left-side
       display: none

@@ -26,7 +26,6 @@ en:
 
   shared:
     header:
-      logo_title: "Experteese in Ruby_on_Rails"
       home: "Home"
       help: "Help"
       sign_in: "Sign in"
@@ -75,20 +74,20 @@ en:
 
 
     button_theme_select:
-      select_theme_bt: "select theme"
+      select_theme_bt: "Select theme"
 
     button_list_results:
-      results_list: "list results"
+      results_list: "List results"
 
     choose_theme_from_arr:
-      select_theme: "select theme ar"
+      select_theme: "Select theme ar"
 
     choose_theme:
-      select_theme: "select theme ch"
+      select_theme: "Select theme ch"
 
     images:
-      common_value: "common value"
-      total_values: "total values"
+      common_value: "Common value:"
+      total_values: "Total values:"
 
       make_decision: "Make your decision"
       save_decision: "save"
