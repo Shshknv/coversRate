@@ -72,26 +72,28 @@ button
 
 
 .button__results.save
-  border-radius: 55px
-  height: 2.5em
-  box-shadow: 3px 3px 4px #989BB0
-  background: rgba(209, 211, 141, 0.4)
-  width: 20%
-  border: rgba(255, 255, 255, 0.70)
-  margin-top: .5em
+  color: #2094a6
+  background-color: white
+  border: 1px #2094a6 solid
+  height: 1.8em
+  width: 10%
+  margin-top: 15px
   display:  block
   cursor: auto
   text-decoration: none
-  float: left
-  margin-left: 8em
+  float: right
+  margin-right: 10px
   margin-bottom: .6em
-
   a
-    text-shadow: 0 -1px 1px #4aa5cf
     text-decoration: none
-    color: #4863be
+    color: #2094a6
     position: relative
     text-align: center
+  &:hover
+    background-color: #2094a6
+    color: white!important
+    a
+      color: white
 
 
 .button__results.save:hover:not(:disabled)
@@ -408,16 +410,11 @@ button
     .image_diag
       display: none
       position: relative
-      border: solid 1px #67aa73
-      background: rgba(54, 119, 189, 0.14)
+      background: rgba(255, 255, 255, 0.8)
       height: 8.6em
       color: indianred
       text-align: center
-      font-family: $helvetica
-      top: 3.65em
-      &:hover
-        border: solid 1px #385D3F
-
+      top: -55px
       .indicator
         background: #deb2ad
         text-align: center
@@ -440,15 +437,13 @@ button
         .outer-circle.show
           display: block
           border-radius: 30px
-          border: 30px solid #30fa29
+          border: 2px solid #30fa29
           left: 43.75%
 
 
       h2.down
-        font-family: $helvetica
-        color: #555fbe
         display: block
-        font-size: 2em
+        font-size: 1.8em
         margin-left: 1em
         margin-bottom: 0
         float: left
@@ -457,11 +452,10 @@ button
       .scale
         display: none
         width: 100%
-        background-color: lightgrey
+        background-color: #2094a6
         line-height: .1em
         position: relative
         top: .9em
-        background: linear-gradient(to right, rgba(247, 27, 27, 0.68), rgba(165, 165, 0, 0.68), rgba(27, 247, 27, 0.68))
 
         .small_img_box
           display: block
